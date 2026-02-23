@@ -1,0 +1,23 @@
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args:
+  - 'build'
+  - '--network=cloudbuild'
+  - '--tag'
+  - '$_GCR_HOSTNAME/$PROJECT_ID/$_SERVICE_NAME:$_VERSION'
+  - '.'
+  - '--build-arg'
+  - 'HF_TOKEN=${_HF_TOKEN}'
+  - '--build-arg'
+  - 'GEMINI_API_KEY=${_GEMINI_API_KEY}'
+  - '--build-arg'
+  - 'PINECONE_API_KEY=${_PINECONE_API_KEY}'
+images:
+- '$_GCR_HOSTNAME/$PROJECT_ID/$_SERVICE_NAME:$_VERSION'
+substitutions:
+  _GCR_HOSTNAME: 'gcr.io'
+  _SERVICE_NAME: 'bot-hajster'
+  _HF_TOKEN: ''
+  _GEMINI_API_KEY: ''
+  _PINECONE_API_KEY: ''
+  _VERSION: ''

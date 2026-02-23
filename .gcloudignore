@@ -1,0 +1,47 @@
+# Jetbrains project files
+.idea/
+
+# Mac system files
+.DS_Store
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Cache folders
+.cache/
+.ruff_cache/
+
+# Git folder
+.git/
+
+# Ignore the gcloudignore file itself
+.gcloudignore
+
+# Deployment script
+deploy.sh
+
+# Env files
+.env
+.env.example
+
+# Test files and directories
+tests/
+test/
+*.test.py
+*.spec.py
+
+# Documentation
+docs/
+
+# Logs
+*.log
+*.log.*
+logs/
