@@ -1,0 +1,58 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Python cache/bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Build/test/tool caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# IDE/editor
+.idea/
+.vscode/
+*.iml
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Local runtime/config
+*.sqlite3
+*.db
+
+# Model/cache directories
+.cache/
+.huggingface/
+
+# Generated artifacts
+src/__pycache__/
+data/images/extracted/
+data/processed/chunks.json
+
+# Optional local notebooks
+.ipynb_checkpoints/
